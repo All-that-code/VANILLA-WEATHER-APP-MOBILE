@@ -23,38 +23,39 @@
             <input type="submit" value="SEARCH" id=submit-bttn />
         </form>
         <div class="weather-content">
-            <div class="text-content">
-                <h1>Paris</h1>
-                <p>Wednesday 15:15 <br />
-                    <span class="sky">Clear Skies</span>
-                </p>
-            </div>
             <div class="weather-icon">
                 <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/111/950/original/cloud_icon.png?1706110231"
                     alt="cloud icon" />
             </div>
-            <div class="temperature">
-                <div class="current-temperature">
-                    20 <span class="units">
-                        °C
-                    </span>
-                </div>
+            <div class="text-content">
+                <h1>Paris</h1>
+                <p>Wednesday 15:15,
+                    <span class="sky">Overcast</span>
+                </p>
                 <div class="humidity-wind">
-                    <p>Humidity: 91%<br />Wind: 8km/h</p>
+                    <p>Humidity: <span class="humidity">91%</span>, Wind: <span class="wind">8km/h</span></p>
                 </div>
             </div>
+            <div class="current-temperature">
+                <div class="temp-value">
+                    20
+                </div>
+                <span class="units">
+                    °C
+                </span>
+            </div>
+            <footer>
+                <hr />
+                <small>This project was coded by
+                    <a href="https://github.com/All-that-code" target="_blank">Amaia Arbizu</a>, is
+                    open-sourced on
+                    <a href="https://github.com/All-that-code/VANILLA-JS-WEATHER-APP" target="_blank">Git-hub</a> and
+                    hosted
+                    on
+                    <a href=" https://timely-eclair-0c9a08.netlify.app/" target="_blank">Netlify</a>.</small>
+            </footer>
         </div>
-        <footer>
-            <hr />
-            <small>This project was coded by
-                <a href="https://github.com/All-that-code" target="_blank">Amaia Arbizu</a>, is
-                open-sourced on
-                <a href="https://github.com/All-that-code/VANILLA-JS-WEATHER-APP" target="_blank">Git-hub</a> and hosted
-                on
-                <a href=" https://timely-eclair-0c9a08.netlify.app/" target="_blank">Netlify</a>.</small>
-        </footer>
-    </div>
-    <script src=" index.js"></script>
+        <script src=" index.js"></script>
 </body>
 
 </html>
