@@ -5,5 +5,7 @@ function showCity(event) {
   city.innerHTML = searchInput.value;
 }
 
+let apiKey = `8o03bb70ba39844fdc4a5a5t25cc70b6`;
+
 let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", showCity);
