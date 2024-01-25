@@ -3,6 +3,20 @@ function updateTemperature(response) {
   let roundedTemp = Math.round(temperature);
   let tempElement = document.querySelector("#temp-value");
   let cityElement = document.querySelector("h1");
+
+  let currentHumidity = response.data.temperature.humidity;
+  let humidityElement = document.querySelector("#humidity");
+
+  let currentWind = response.data.wind.speed;
+  let formattedWind = Math.round(currentWind);
+  let windElement = document.querySelector("#wind");
+
+  let currentCondition = response.data.condition.description;
+  let conditionElement = document.querySelector("#sky");
+
+  humidityElement.innerHTML = `${currentHumidity}%`;
+  windElement.innerHTML = `${formattedWind}km/h`;
+  conditionElement.innerHTML = currentCondition;
   cityElement.innerHTML = response.data.city;
   tempElement.innerHTML = roundedTemp;
 }

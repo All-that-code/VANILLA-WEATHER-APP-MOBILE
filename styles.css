@@ -36,6 +36,7 @@ a {
   font-weight: 600;
   color: #181818;
 }
+
 .weather-app-container {
   width: 370px;
   height: 680px;
@@ -98,8 +99,8 @@ a {
   line-height: 0.7;
 }
 
-.humidity,
-.wind {
+#humidity,
+#wind {
   font-weight: 500;
 }
 .temp-value {
