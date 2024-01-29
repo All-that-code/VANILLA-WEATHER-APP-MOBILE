@@ -52,6 +52,12 @@ function updateTemperature(response) {
   } else if (weatherCondition === "moderate rain") {
     iconUrl =
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/622/original/strong_rain.png?1706464692";
+  } else if (weatherCondition === "fog") {
+    iconUrl =
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/620/original/mist.png?1706464661";
+  } else if (weatherCondition === "snow") {
+    iconUrl =
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/621/original/snow.png?1706464669";
   }
 
   let weatherIcon = document.querySelector("#icon");
