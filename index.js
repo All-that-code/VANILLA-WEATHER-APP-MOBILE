@@ -16,8 +16,6 @@ function updateTemperature(response) {
   let weatherCondition = response.data.condition.description;
   let iconUrl = response.data.condition.icon_url;
 
-  console.log("Weather Condition:", weatherCondition);
-
   if (weatherCondition === "clear sky") {
     iconUrl =
       "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/112/614/original/sun.png?1706464603";
